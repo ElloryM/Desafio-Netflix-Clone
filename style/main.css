@@ -118,3 +118,38 @@ i {
 }
 
 
+.item {
+    
+  }
+  
+  .item:hover::after {
+    visibility: visible
+  }
+  
+  .item img {
+    width: 100%
+  }
+  
+  .item::after {
+    background: url(/img/icone1.png) no-repeat,
+                rgba(0, 0, 0, 0.3);
+    background-position: 55% 70%;
+    background-size: 20%;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
