@@ -1,0 +1,29 @@
+@media screen and (max-width:700px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .filme-principal .logo-filme {
+        width: 300px;
+        height: 70px;
+        background-image: url('/img/logo1.png');
+        text-shadow: rgb(116, 9, 9) 0px 0px 2px;
+        font-size: 10px;
+        background-size: 300px;
+    }
+
+    .descricao {
+        width: 230px;
+        height: 70px;
+        margin-left: 5px;
+        margin-top: 20px;
+        content: url('/img/logo2.png');
+    }
+    
+    .botao {
+        margin-top: 5px;
+        width: 200px;
+        height: 60px;
+    }
+}

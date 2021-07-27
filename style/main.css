@@ -1,0 +1,120 @@
+/*
+logo e menu
+*/
+:root {
+    --vermelho: hsl(261, 71%, 51%);
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    background: var(--preta);
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+
+}
+
+/*
+filme princpal
+*/
+
+.filme-principal {
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.100%)), url('/img/1.jpg');
+    height: 400px;
+    background-size: cover;
+    font-family: Cambria;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.logo-filme {
+    width: 600px;
+    height: 130px;
+    background-image: url('/img/logo1.png');
+    text-shadow: rgb(116, 9, 9) 0px 0px 2px;
+    font-size: 10px;
+    background-size: 600px;
+
+}
+
+.descricao {
+    margin-bottom: 40px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-left: 20px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    cursor: pointer;
+}
+
+
