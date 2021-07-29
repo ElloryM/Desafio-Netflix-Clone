@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookFlix</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="/style/main-modal.css">
 
     <!--reponsividade-->
 
@@ -20,6 +21,10 @@
 
 </head>
 <body>
+
+        
+    <!--CABEÇALHO E MENU-->
+
     <header>
         <div class="container">
             <h2 class="logo">BOOKFLIX</h2>
@@ -32,6 +37,9 @@
 
         </div>
     </header>
+
+    
+    <!--FILME PRINCIPAL-->
 
     <main>
        <div class="filme-principal">
@@ -50,7 +58,7 @@
                     <i class="fas fa-play"></i>
                     ASSISTIR AGORA
                 </button>
-                <button role="button" class="botao">
+                <button onclick="acao1()" role="button" class="botao">
                     <i class="fas fa-info-circle"></i>
                     MAIS INFORMAÇÕES
                 </button>
@@ -58,71 +66,313 @@
             
 
        </div> 
+
+       
     </main>
 
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+
+    <!--JANELA MODAL-->
+
+    <div id="modal">    
+
+        <div class="imagem1">
+            <img src="/img/livro1.jpg" alt="">
+            <p class="origem1">A série de TV (2010) é uma adaptação dos HQs de mesmo nome
+            escrita por Robert Kirkman e desenhada por Tony Moore
+            (depois substiuído por Charlie Adlard na edição 7)
+            publicada nos Estados Unidos pela Image Comics desde 2003.
+            </p>
+                    
+        </div>
+        <div onclick="fechar1()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/Walking-Dead-1-Robert-Kirkman/dp/8583682631" target="_blank">LER VOLUME 1</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal2">    
+
+        <div class="imagem2">
+            <img src="/img/livro2.jpg" alt="">
+            <p class="origem2">A série de TV Game of Thrones é baseada na série best-seller
+                internacional As Crônicas de Gelo e Fogo escrita pelo autor
+                norte-americano George R.R. Martin publicado em 1996.
+            </p>
+                    
+        </div>
+        <div onclick="fechar2()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/Guerra-dos-Tronos-Cr%C3%B4nicas-Gelo/dp/8556510787/ref=asc_df_8556510787/?tag=googleshopp00-20&linkCode=df0&hvadid=379791987062&hvpos=&hvnetw=g&hvrand=1021682149140264238&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031613&hvtargid=pla-786135651297&psc=1" target="_blank">LER VOLUME 1</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal3">    
+
+        <div class="imagem3">
+            <img src="/img/livro3.jpg" alt="">
+            <p class="origem3">O filme Entrevista com o Vampiro é baseado no livro de mesmo nome
+                escrito pela romancista estadunidense Anne Rice. Sua primeira
+                edição foi publicada nos Estados Unidos em 1976.
                 
+            </p>
+                    
+        </div>
+        <div onclick="fechar3()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/dp/B08669N67Y/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal4">    
+
+        <div class="imagem4">
+            <img src="/img/livro4.jpg" alt="">
+            <p class="origem4">O filme O Silêncio dos Inocentes é baseado no livro homônimo
+                publicado em 1988 por Thomas Harris.
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar4()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/sil%C3%AAncio-dos-inocentes-Thomas-Harris/dp/850111362X/ref=sr_1_1?adgrpid=81506559495&dchild=1&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOCAJYMhant9Xf0R7PNacJBRaTUFq7axRUHGW4FT7wx5Dl7weNXoAOhoCL6kQAvD_BwE&hvadid=425957479800&hvdev=c&hvlocphy=1031613&hvnetw=g&hvqmt=e&hvrand=5874529179842031237&hvtargid=kwd-823957176171&hydadcr=5682_11235263&keywords=o+silencio+dos+inocentes+livro&qid=1627582543&sr=8-1" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+    
+
+    <div id="modal5">    
+
+        <div class="imagem5">
+            <img src="/img/livro5.jpg" alt="">
+            <p class="origem5">A trilogia de filme O Senhor dos Anéis foi beseado nos livros de
+                alta fantasia escrito pelo escritor britânico J.R.R. Tolien, escritos
+                entre 1937 e 1949.
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar5()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/Box-Trilogia-Senhor-dos-An%C3%A9is/dp/8595086354/ref=sr_1_1?adgrpid=83848702529&dchild=1&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOMkzPmrnl9iCkYMD4p_5WB0pf6qliFuzFiqgVtGSD5h6pO2z4lVyKxoCzs0QAvD_BwE&hvadid=426016286327&hvdev=c&hvlocphy=1031613&hvnetw=g&hvqmt=e&hvrand=5272847663932067728&hvtargid=kwd-302843922898&hydadcr=5653_11235203&keywords=senhor+dos+aneis+livro&qid=1627582024&sr=8-1&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+    
+
+    <div id="modal6">    
+
+        <div class="imagem6">
+            <img src="/img/livro6.jpg" alt="">
+            <p class="origem6">O Filme Anna Karenina é baseado no romance de mesmo nome do escritor
+                russo Liev Tolstói, publicado entre 1875 e 1877 pela revista Ruskki
+                Véstnik.
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar6()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/dp/B071HPWX1F/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal7">    
+
+        <div class="imagem7">
+            <img src="/img/livro7.jpg" alt="">
+            <p class="origem7">O filme Um Sonho de Liberdade é um drama norte-americano baseado na 
+                novela Rita Hayworth and Shawshank Redemption do autor Stephen King,
+                publicado em 1982 como parte da coleção Different Seasons.
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar7()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/Rita-Hayworth-Shawshank-Redemption-Stephen/dp/1982155752" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal8">    
+
+        <div class="imagem8">
+            <img src="/img/livro8.jpg" alt="">
+            <p class="origem8">O filme britano-americano O Jogo da Imitação é baseado no livro 
+                biográfico de Alan Turing: The Enigma, de Andrews Hodges, inspirado
+                na vida do criptoanalista britânico Alan Turing.
+                
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar8()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/morte-vida-Alan-Turing-romance/dp/8535929959/ref=sr_1_1?adgrpid=82444115478&dchild=1&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOA4iSTK4IAgQZU31z4GZ9ys9RZIAZA0jrEKLXOHRcXjz2zo9TrFXVRoCS1QQAvD_BwE&hvadid=425983296610&hvdev=c&hvlocphy=1031613&hvnetw=g&hvqmt=e&hvrand=15509022480725942478&hvtargid=kwd-448776859891&hydadcr=5655_11235215&keywords=o+jogo+da+imita%C3%A7%C3%A3o+livro&qid=1627582875&sr=8-1" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal9">    
+
+        <div class="imagem9">
+            <img src="/img/livro9.jpg" alt="">
+            <p class="origem9">O Menino Do Pijama Listrado é baseado no livro de mesmo nome escrito
+                por John Boyne em 2006 e chegou ao número dois de best sellers do
+                New York Times, nos Estados Unidos.
+                
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar9()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/dp/B00AI68ORW/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+
+
+    <div id="modal10">    
+
+        <div class="imagem10">
+            <img src="/img/livro10.jpg" alt="">
+            <p class="origem10">O filme Trainspotting é baseado no primeiro romance do escritor 
+                escocês Irvine Welsh, publicado em 1993. Ele assume a forma de uma
+                coleção de contos, escritos em escocês ou inglês britânico.
+                
+                
+            </p>
+                    
+        </div>
+        <div onclick="fechar10()" class="fechar">
+            X
+        </div>
+    
+        <button role="button" class="botao-modal">
+            <i class="fas fa-bookmark"></i>
+            <a href="https://www.amazon.com.br/Trainspotting-Irvine-Welsh/dp/8532517730/ref=sr_1_1?adgrpid=111158750801&dchild=1&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOINbEtwGnwQ_guVp2l8XZIKNsX0HpILLH4j-_3fHByrsWdPTuw3oExoCnOYQAvD_BwE&hvadid=459704525174&hvdev=c&hvlocphy=1032068&hvnetw=g&hvqmt=e&hvrand=18440092197072541586&hvtargid=kwd-411643533297&hydadcr=6197_11235407&keywords=livro+trainspotting&qid=1627583217&sr=8-1" target="_blank">LEIA AGORA</a>
+        </button>  
+
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!--CARROSSEL-->
+        
+
+    
+    <div class="carrosel-filmes">
+
+               
+        <div class="owl-carousel owl-theme">
+
+                       
+            <div onclick="acao2()" class="item1">
+                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">                
+                              
             </div>
-            <div class="item">
+            <div onclick="acao3()" class="item2">
                 <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao4()" class="item3">
                 <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao5()" class="item4">
                 <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao6()" class="item5">
                 <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao7()" class="item6">
                 <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao8()" class="item7">
                 <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao9()" class="item8">
                 <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
             </div>
-            <div class="item">
+            <div onclick="acao10()" class="item9">
                 <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
             </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini11.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini12.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini13.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini14.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini15.jpg" alt="" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/mini16.jpg" alt="" srcset="">
-            </div>
+            
         </div>
     </div>
 
     </div>
 
     
+    
+
+
+
+
+    
     <script src="https://kit.fontawesome.com/08efa7ff9c.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="/js/setup-modal.js"></script>
 
-
+    
 
 </body>
 </html>

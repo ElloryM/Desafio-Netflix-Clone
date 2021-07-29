@@ -43,7 +43,7 @@ header nav a:hover {
 }
 
 /*
-filme princpal
+FILME PRINCIPAL
 */
 
 .filme-principal {
@@ -87,7 +87,8 @@ filme princpal
 
     cursor: pointer;
     transition: .3s ease all;
-    margin-left: 20px;
+    margin-left: 40px;
+    border-radius: 8px;
 }
 
 .botao:hover {
@@ -100,12 +101,17 @@ i {
 }
 
 .container {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .filme-principal .container {
     width: 50%;
 }
+
+/*
+CARROSSEL
+*/
+
 
 .box-filme {
     height: 100%;
@@ -115,22 +121,26 @@ i {
 
 .carrosel-filmes {
     cursor: pointer;
+    position: relative;
+    top: 30%;
 }
 
 
-.item {
+.item1 {
     
   }
   
-  .item:hover::after {
+  .item1:hover::after {
+    
     visibility: visible
+    
   }
   
-  .item img {
+  .item1 img {
     width: 100%
   }
   
-  .item::after {
+  .item1::after {
     background: url(/img/icone1.png) no-repeat,
                 rgba(0, 0, 0, 0.3);
     background-position: 55% 70%;
@@ -143,13 +153,221 @@ i {
     top: 0;
     visibility: hidden;
     width: 100%;
+      
   }
 
 
+.item2 {
+    
+}
+
+.item2:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item2 img {
+  width: 100%
+}
+
+.item2::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
 
 
+.item3 {
+    
+}
+
+.item3:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item3 img {
+  width: 100%
+}
+
+.item3::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
+
+.item4 {
+    
+}
+
+.item4:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item4 img {
+  width: 100%
+}
+
+.item4::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
+
+.item5 {
+    
+}
+
+.item5:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item5 img {
+  width: 100%
+}
+
+.item5::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
 
 
+.item6 {
+    
+}
+
+.item6:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item6 img {
+  width: 100%
+}
+
+.item6::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
 
 
+.item7 {
+    
+}
+
+.item7:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item7 img {
+  width: 100%
+}
+
+.item7::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
+
+
+.item9 {
+    
+}
+
+.item9:hover::after {
+  
+  visibility: visible
+  
+}
+
+.item9 img {
+  width: 100%
+}
+
+.item9::after {
+  background: url(/img/icone1.png) no-repeat,
+              rgba(0, 0, 0, 0.3);
+  background-position: 55% 70%;
+  background-size: 20%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+    
+}
 
